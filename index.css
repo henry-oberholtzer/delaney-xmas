@@ -133,7 +133,8 @@ img {
 	transition: all 0.2s ease;
 }
 
-.euroTranceDownload:hover {
+.euroTranceDownload:hover,
+.euroTranceDownload:focus {
 	background-color: var(--dark-blue);
 }
 
@@ -148,7 +149,6 @@ img {
 	background-color: var(--light-blue);
 	border-radius: 5px;
 	padding: 10px;
-	margin: 0 0 10px 0;
 }
 
 .euroTranceTrackList h4 {
@@ -158,4 +158,49 @@ img {
 .euroTranceTrackList .year {
 	float: right;
 	flex-grow: calc(100%);
+}
+
+@media only screen and (max-width: 480px) {
+	body {
+		width: 100%;
+		max-width: 100%;
+	}
+
+	.euroTrance {
+		padding: 10px;
+	}
+
+	.euroTranceVolume {
+		flex-direction: column;
+		width: 100%;
+		margin: 5px;
+		padding: 5px;
+	}
+
+	img {
+		width: 100%;
+	}
+
+	.imgDiv {
+		align-self: center;
+		width: 100%;
+		margin: 0px 5px;
+	}
+
+	.mobileHidden {
+		position: fixed;
+		visibility: hidden;
+	}
+
+	.euroTranceDownload {
+		margin-top: 10px;
+	}
+	.euroTranceDesc {
+		margin-top: 10px;
+		margin-bottom: 0px;
+	}
+
+	.euroTranceTitle {
+		text-align: center;
+	}
 }
